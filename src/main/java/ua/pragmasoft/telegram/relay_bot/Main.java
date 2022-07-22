@@ -1,4 +1,4 @@
-package ua.pragmasoft.template;
+package ua.pragmasoft.telegram.relay_bot;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

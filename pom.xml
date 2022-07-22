@@ -3,12 +3,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>ua.pragmasoft</groupId>
-  <artifactId>template</artifactId>
-  <version>2022.07.01-SNAPSHOT</version>
+  <groupId>ua.pragmasoft.telegram</groupId>
+  <artifactId>relay-bot</artifactId>
+  <version>2022.07.22-SNAPSHOT</version>
 
-  <name>Java 17 project template</name>
-  <url>https://github.com/pragmasoft-ua/</url>
+  <name>Telegram relay bot by Pragmasoft Ukraine</name>
+  <url>https://github.com/pragmasoft-ua/telegram-relay-bot</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -78,7 +78,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>ua.pragmasoft.template.Main</mainClass>
+              <mainClass>ua.pragmasoft.telegram.relay_bot.Main</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -87,7 +87,7 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
         <configuration>
-          <mainClass>ua.pragmasoft.template.Main</mainClass>
+          <mainClass>ua.pragmasoft.telegram.relay_bot.Main</mainClass>
         </configuration>
       </plugin>
       <plugin>
@@ -102,6 +102,7 @@
         </configuration>
         <executions>
           <execution>
+            <?m2e execute onConfiguration,onIncremental?>
             <id>validate</id>
             <phase>validate</phase>
             <goals>
@@ -160,12 +161,13 @@
       <version>1.2.11</version>
     </dependency>
 
-
+    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.13.2</version>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.8.2</version>
       <scope>test</scope>
     </dependency>
+
   </dependencies>
 </project>

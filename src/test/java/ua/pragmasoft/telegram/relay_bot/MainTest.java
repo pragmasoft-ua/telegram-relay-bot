@@ -1,8 +1,8 @@
-package ua.pragmasoft.template;
+package ua.pragmasoft.telegram.relay_bot;
 
-import static org.junit.Assert.assertTrue;
 
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,7 +10,7 @@ public class MainTest {
   /**
    * Logger.
    */
-  static final Logger LOG = LoggerFactory.getLogger(Main.class);
+  static final Logger LOG = LoggerFactory.getLogger(MainTest.class);
 
   /**
    * Test template.
