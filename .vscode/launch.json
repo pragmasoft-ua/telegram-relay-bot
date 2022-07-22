@@ -1,0 +1,28 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Launch Example",
+      "request": "launch",
+      "mainClass": "org.drinkless.tdlib.example.Example",
+      "vmArgs": "-Djava.library.path=C:/Users/zemni/Projects/td/tdlib/bin"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "ua.pragmasoft.telegram.relay_bot.Main",
+      "args": "@.args"
+    }
+  ]
+}

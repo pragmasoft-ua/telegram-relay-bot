@@ -1,6 +1,18 @@
-# Pragmasoft project
+# Telegram relay bot
 
-## Java 17 project template
+## Telegram relay bot can be used for telegram and livechat support
+
+This bot depends on tdlib native library from telegram
+
+Before running this project, you need to download and build tdlib for your platform as explained here
+
+https://core.telegram.org/tdlib/getting-started
+
+Make sure you configure tdlib build with JNI option.
+
+Then, you need to provide path to the built tdlib shared libraries and dependencies as `java.library.path` value
+
+Example: `java -Djava.library.path=C:/Users/zemni/Projects/td/tdlib/bin -jar target/telegram-relay-bot.jar @.args`
 
 ### Build
 
@@ -35,3 +47,22 @@ You can also copy or symlink a pre-commit git hook from `src/main/git/hooks` to 
 before git commits.
 
 Alternatively, you may wish to edit hook to automatically reformat `./mvnw formatter:format` code, instead of validation
+
+## Checkstyle static analysis
+
+To skip static analysis, use this option:
+
+`./mvnw -Dcheckstyle.skip package`
+
+## TODO
+
+- +PicoCli
+- add graalvm native build
+- convert to JPMS module
+- add docker build and config
+- ctrl+break signal handler
+- CompletableFuture
+- Change AppId
+- add lettuce and KeyDB as an event bus
+- ddd domain
+- probably use guava local event bus?

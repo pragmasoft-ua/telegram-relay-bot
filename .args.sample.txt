@@ -1,0 +1,7 @@
+# Example .args file
+# Rename to .args and fill parameter values
+# Use as relay_bot @.args
+--api-id=
+--api-hash=
+--bot-name=pragmasoft_relay_bot
+--bot-token=
